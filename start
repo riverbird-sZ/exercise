@@ -1,50 +1,32 @@
 # User enters some numbers in expected field (those numbers are separated with comma). After entering data convert those numbers to the list. 
 # Then calculate and print: biggest and lowest number from the list, average value, then create a list that contains olny numbers greater then the average value and then print that new list. 
 
-# Importing modules and defining variables
-
+#Importing modules and defining variables
 import statistics 
-a = [2, 4, 5, 6, 7]
-b = [2345]
-userList = [] 
 
 # Getting user input and adding to the list 
-
-userInput = input("Ovdje unesi brojeve:")
-print("Uneseni brojevi su: " + ", ".join(userInput))
-print(type(userInput)) # provjera tipa podataka
-
-# print("Brojevi su: " + str(userList.append(userInput)))
-
-# jel se ovdje moglo koristiti append? 
+userInput = input("Enter numbers here: ")
+print("Entered numbers are: " + ", ".join(userInput))
 
 # Converting data to list 
 userInputList = list(userInput)
-print(type(userInputList))
+print(type(userInputList)) # this is a list of strings, but we need list of integers
 print(userInputList)
 
+# Converting data to integers 
+for i in range(len(userInputList)):
+    userInputList[i] = int(userInputList[i])
+print(userInputList)
+print(type(userInputList[2])) # tested, it is list of integers
+
 # Find maximum 
-print("Maximum is: " + max(userInputList))
+print("Maximum is: " + str(max(userInputList)))
 
 # Find minimum 
-print("Minimum is: " + min(userInputList))
+print("Minimum is: " + str(min(userInputList)))
 
-# Find average number 
-brojevi = [int(x) for x in userInput.split()]
-
-print("Mean is: " + str(statistics.mean(a)))
-print("Mean is: " + str(statistics.mean(b)))
-print("Mean is: " + str(statistics.mean(userInput)))
-#print(userInputList)
-#userInputList.split()
-
-# print("Mean is: " + str(statistics.mean(a)))
+# Find average number
+print("Mean is: " + str(statistics.mean(userInputList)))
 
 # List that contain only numbers greater than the average value (print that list)
 
-
-
-print("Ovo je konverzija:")
-convertedInput= [int(userInput)]
-print(type(convertedInput))
-print(type(userInput))
