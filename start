@@ -25,8 +25,11 @@ print("Maximum is: " + str(max(userInputList)))
 # Find minimum 
 print("Minimum is: " + str(min(userInputList)))
 
-# Find average number
-print("Mean is: " + str(statistics.mean(userInputList)))
+
+# Find mean
+mean = statistics.mean(userInputList)
+print("Mean is: " + str(mean))
 
 # List that contain only numbers greater than the average value (print that list)
+
 
