@@ -3,6 +3,7 @@
 
 #Importing modules and defining variables
 import statistics 
+newList = []
 
 # Getting user input and adding to the list 
 userInput = input("Enter numbers here: ")
@@ -31,5 +32,8 @@ mean = statistics.mean(userInputList)
 print("Mean is: " + str(mean))
 
 # List that contain only numbers greater than the average value (print that list)
-
+for item in userInputList:
+    if item > mean: 
+        newList.append(item)
+print(newList)  
 
