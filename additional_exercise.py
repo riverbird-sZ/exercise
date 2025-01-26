@@ -43,3 +43,36 @@ elif len(name) > max_limit:
     print('Name can be a maximum of 50 characters.')
 else:
     print('Name looks good')
+
+
+'''
+min_limit = 3
+max_limit = 50
+
+name = input('Enter your name: ')
+
+if len(name) < min_limit:
+    print('Name must be at least 3 characters long.')
+elif len(name) > max_limit:
+    print('Name can be a maximum of 50 characters.')
+else:
+    print('Name looks good') '''
+    
+# Weight Converter Program 
+# User enters their weight, then program asks is that in kilograms or pounds. After user responds, program converts to other unit.
+
+weight = input('What is your weight? ')
+unit = input('Is that in kilograms or ponuds? K for kg, L for lbs ')
+
+k = 'k'
+l = 'l'
+
+
+if unit == k:
+    conversion_to_pounds = int(weight) * 2.2
+    print(f'You have {conversion_to_pounds} pounds.')
+elif unit == l:
+    conversion_to_kilograms = weight * 0.45
+    print(f'You have {round(conversion_to_kilograms, 2)} kilograms.')
+
+# kako radi round funkcija?
