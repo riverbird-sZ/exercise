@@ -61,6 +61,8 @@ else:
 # Weight Converter Program 
 # User enters their weight, then program asks is that in kilograms or pounds. After user responds, program converts to other unit.
 
+# solution - not so good
+
 weight = input('What is your weight? ')
 unit = input('Is that in kilograms or ponuds? K for kg, L for lbs ')
 
@@ -76,3 +78,30 @@ elif unit == l:
     print(f'You have {round(conversion_to_kilograms, 2)} kilograms.')
 
 # kako radi round funkcija?
+
+# Weight Converter Program 
+# User enters their weight, then program asks is that in kilograms or pounds. After user responds, program converts to other unit.
+
+# solution 1:
+weight = int(input('What is your weight? '))
+unit = input('Is that in kilograms or ponuds? (K for kg, L for lbs) ')
+
+if unit.upper() == 'K':
+    conversion_to_pounds = round(int(weight) * 2.2)
+    print(f'You have {conversion_to_pounds} pounds.')
+elif unit.upper() == 'L':
+    conversion_to_kilograms = round(int(weight) * 0.45)
+    print(f'You have {conversion_to_kilograms} kilograms.') 
+
+# solution 2:
+    
+weight = int(input('What is your weight? '))
+unit = input('Is that in kilograms or pounds? (K for kilos, L for lbs) ')
+
+if unit.upper() == 'K':
+    converted = round(weight * 2.2)
+    print(f'You have {converted} pounds.')
+else:
+    converted = round(weight * 0.45)
+    print(f'You have {converted} kilograms.')
+
