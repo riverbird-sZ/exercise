@@ -1,12 +1,14 @@
- name = input("What is your name? ")
+import random
+
+"""name = input("What is your name? ")
 print("Hi " + name)
 color = input("What is your favourite color? " )
 print(name + " likes " + color)
 
 birth_year = input("Birth year: ")
 age = 2019 - int(birth_year)
-print("This person is " + str(age) + " years old") """
-"""
+print("This person is " + str(age) + " years old")
+
 course = "Python for beginners"
 print(len(course))
 
@@ -45,7 +47,7 @@ else:
     print('Name looks good')
 
 
-'''
+
 min_limit = 3
 max_limit = 50
 
@@ -56,7 +58,7 @@ if len(name) < min_limit:
 elif len(name) > max_limit:
     print('Name can be a maximum of 50 characters.')
 else:
-    print('Name looks good') '''
+    print('Name looks good')
     
 # Weight Converter Program 
 # User enters their weight, then program asks is that in kilograms or pounds. After user responds, program converts to other unit.
@@ -103,5 +105,61 @@ if unit.upper() == 'K':
     print(f'You have {converted} pounds.')
 else:
     converted = round(weight * 0.45)
-    print(f'You have {converted} kilograms.')
+    print(f'You have {converted} kilograms.') """
+
+# Guessing game
+
+secret_number = 9
+guess_count = 0
+guess_limit = 3
+while guess_count < guess_limit:
+    guess = int(input("Enter your guess: "))
+    if guess == secret_number:
+        print("Well done, you guessed it!")
+        break
+    else:
+        print("Please try again :)")
+    guess_count = guess_count + 1
+else:
+    print("Sorry, you failed :)")
+
+# Car game
+
+""" When user enters help, he gets three options: 
+ start - to start the car 
+ stop - to stop the car
+ quit - to exit """
+
+user_input = input()
+help_variable = "HELP"
+stop_variable = "STOP"
+start_variable = "START"
+quit_variable = "QUIT"
+
+
+while user_input.upper() == help_variable:
+    print("start - to start the car"
+      "stop - to stop the car"
+      "quit - to exit")
+    user_input_again == input("What would you like? ")
+        if user_input_again.upper() == stop_variable:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
