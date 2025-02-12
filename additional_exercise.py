@@ -105,7 +105,7 @@ if unit.upper() == 'K':
     print(f'You have {converted} pounds.')
 else:
     converted = round(weight * 0.45)
-    print(f'You have {converted} kilograms.') """
+    print(f'You have {converted} kilograms.') 
 
 # Guessing game
 
@@ -121,28 +121,189 @@ while guess_count < guess_limit:
         print("Please try again :)")
     guess_count = guess_count + 1
 else:
-    print("Sorry, you failed :)")
+    print("Sorry, you failed :)") """
 
 # Car game
 
 """ When user enters help, he gets three options: 
  start - to start the car 
  stop - to stop the car
- quit - to exit """
+ quit - to exit 
 
-user_input = input()
+print("start - to start the car")
+print("stop - to stop the car")
+print("quit - to exit") 
+
+user_input = input("Enter something: ")
 help_variable = "HELP"
 stop_variable = "STOP"
 start_variable = "START"
 quit_variable = "QUIT"
 
-
 while user_input.upper() == help_variable:
-    print("start - to start the car"
-      "stop - to stop the car"
-      "quit - to exit")
-    user_input_again == input("What would you like? ")
-        if user_input_again.upper() == stop_variable:
+    repeated_input = input("What would you like? ")
+    if repeated_input.upper() == start_variable:
+        print("You started the engine.")
+    elif repeated_input.upper() == stop_variable:
+        print("You stopped the engine.")
+    elif repeated_input.upper == quit_variable:
+        print("You quit the engine.")
+    else:
+        print("I don't understand that.")
+else:
+    print("I don't understand that.") 
+
+
+
+command = ""
+started = False
+
+while True:
+    command = input("Enter something: ").lower()
+    if command == "start":
+        if started:
+            print("Car already started!")
+        else:
+            started = True
+            print("Car started...")
+    elif command == "stop":
+        if not started:
+            print("Car is already stopped!")
+        else:
+            started = False
+            print("Car stopped.")
+    elif command == "help":
+    print(start - to start the car
+stop - to stop the car quit - to exit
+     elif command == "quit": 
+        break
+    else:
+        print("I don't understand. Please try again.") """
+
+"""Calculate total cost of goods in shopping cart"""
+
+""" prices = [10, 10, 30]
+total = 0
+
+for price in prices:
+    total = sum(prices)
+print(total) """
+
+"""total = price + price -> total += price"""
+
+""" Print letter F out of letters X """
+
+
+""" for number in numbers:
+    print("x" * number) """
+
+""" for number in numbers:
+    print("x")
+    for i in numbers:
+        print(numbers[i]) 
+         for number in numbers:
+        print("x")
+        print(numbers[i])
+        i += 1
+    print("s") 
+    print(number, numbers[0])
+   i = 0
+   for numbers[i] in numbers:
+       print("test")
+       
+  for i < numbers[i]:
+        print("X")
+    i += 1
+
+    for number in range(len(numbers)):
+        print("X")
+        
+     for numbers[i] in numbers:
+        print("xxxxxxx")
+        i += 1 
+
+numbers = [5, 2, 5, 2, 2]
+a = []
+for number in numbers:
+     i = 0
+     while i < numbers[i]:
+         b = a.append("X")
+         print(b)
+     i += 1
+
+
+a = range(len(numbers))
+print(a)
+b = len(numbers)
+print(b)
+print(numbers[0])
+print(numbers[1]) 
+
+
+
+ i = 0
+     while i < numbers[i]:
+         b = a.append("X")
+         print(b)
+     i += 1
+     
+     
+a = range(len(numbers))
+print("range je ", a)
+b = len(numbers)
+print("duzina niza", b)
+print("prvi broj",numbers[0])
+print("drugi broj", numbers[1])
+x = []
+
+
+   #print("".join(output))
+
+#b = range(count)
+# print(b)
+# a = range(numbers[1])
+# print(a)
+
+        print(x.append("X"))
+
+
+
+GOTOV ZADATAK: 
+
+numbers = [5, 2, 5, 2, 2]
+
+for count in numbers:
+    output = ""
+    for number in range(count):
+       output += "x"
+    print(output)
+
+
+
+"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
